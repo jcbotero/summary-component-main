@@ -1,0 +1,223 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    width: 1440px;
+    font-family: "hanken";
+}
+
+main {
+    display: inline-flex;
+    margin: 12% 25%;
+    width: 50%;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "hanken";
+    src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "hanken bold";
+    src: url("./fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+.left {
+    background-image: linear-gradient( hsl(252, 100%, 67%),  hsl(241, 81%, 54%));
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    
+}
+
+.left h1 {
+  color: hsl(241, 100%, 89%);
+  font-family: 700;
+}
+
+.score {
+    width: 52%;
+    height: 200px;
+    margin: -4% 24% 0% 24% ;
+    border-radius: 50%;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+}
+
+.score h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 80px;
+    padding-top: 18%;
+}
+
+.score p {
+    color: hsl(221, 100%, 96%);
+    font-size: 15px;
+    margin-top: -40%;
+    opacity: 0.6;
+}
+
+.great h2{
+    color: hsl(0, 0%, 100%);
+}
+
+.great p {
+   color: hsl(241, 100%, 89%);
+   font-weight: 400;
+   padding: 0% 13%;
+   margin-bottom: 10%;
+}
+
+.summary {
+    border-radius: 15px 50px 30px 5px; 
+    border-left: 0cm;
+    padding: 0% 6% 4% 6%;
+    width: 41%;
+    background-color: rgb(247, 248, 248);
+    filter: drop-shadow(1px 8px 5px rgb(231, 231, 231));
+}
+
+.indicators {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: rgb(243, 241, 241);
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+
+.mesure {
+    margin-left: 30%;
+}
+
+.mesure p {
+    color: black;
+}
+
+.mesure span {
+    color: hsl(0, 0%, 61%);
+    margin-left: 7%;
+}
+
+#one {
+    color: hsl(0, 100%, 67%);
+}
+
+#two {
+    color:  hsl(39, 100%, 56%);
+}
+
+#three {
+    color: hsl(166, 100%, 37%);
+}
+
+#four {
+    color:  hsl(234, 85%, 45%);
+}
+
+.summary button {
+    margin-top: 15%;
+    width: 100%;
+    height: 53px;
+    font-size: 19px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    background-color: rgb(39, 39, 68);
+}
+
+.summary button:hover {
+   cursor: pointer;
+   background-image: linear-gradient( hsl(252, 100%, 67%),  hsl(241, 81%, 54%));
+}
+
+
+@media (max-width: 600px ) {
+    body {
+        width: 375px;
+       
+    }
+    main {
+        display: inline-block;
+        margin: -4% 0% 0% 0%;
+        width: 100%;
+    }
+    
+    .left {
+        border-radius: 0px 0px 30px 30px; 
+        width: 100%;
+        padding: 3% 0%;
+    }
+    
+    .score {
+        width: 50%;
+        height: 180px;
+        margin: -12% 24% 0% 24% ;
+    }
+    
+    .score h2 {
+        font-size: 75px;
+        padding-top: 18%;
+    }
+    
+    .great p {
+       padding: 0% 10%;
+    }
+    
+    .summary {
+        width: 100%;
+    }
+
+    .indicators {
+        justify-content:space-around;
+    }
+    
+    .indicators p {
+        margin-left: -18%;
+    }
+    
+    .indicators img {
+        margin-left: -5%;
+    }
+
+    .mesure {
+        margin-left: 5%;
+    }
+    
+    
+    .summary button {
+        margin-top: 2%;
+        width: 90%;
+    }
+    
+  }
+
+  
+
+@media (min-width: 1441px ) {
+    body {
+        width: 100vw;
+       
+    }
+}
+
+
+@media (min-width: 601px ) and (max-width: 900px ) {
+   
+main {
+    display: inline-flex;
+    margin: 12% 1%;
+    width: 50%;
+    font-size: 18px;
+}
+}
+
+
+@media (min-width: 901px ) and (max-width: 1200px ) {
+   
+    main {
+        display: inline-flex;
+        margin: 12% 10%;
+        width: 50%;
+        font-size: 18px;
+    }
+    }
